@@ -6,3 +6,23 @@ Write a program that reads a position from the user.
 So, for example if the user enters 'a1' then your program should report that the square is black.
 if the user enters 'd5' then your program should report that the square is white
 """
+
+r = input('What is your letter?: ').upper()
+s = int(input('What is your number?: '))
+
+if r == 'A' or r == 'C' or r == 'E' or r == 'G':
+    if s == 8 or s == 6 or s == 4 or s == 2:
+        print('The square is white')
+    elif s == 1 or s == 3 or s == 5 or s == 7:
+        print('The square is black')
+    else:
+        print('The data is incorrect')
+elif r == 'B' or r == 'D' or r == 'F' or r == 'H':
+    if s == 8 or s == 6 or s == 4 or s == 2:
+        print('The square is black')
+    elif s == 1 or s == 3 or s == 5 or s == 7:
+        print('The square is white')
+    else:
+        print('The data is incorrect')
+else:
+    print('The data is incorrect')
