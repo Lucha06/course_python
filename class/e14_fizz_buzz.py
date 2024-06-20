@@ -14,3 +14,16 @@ Write a program that displays the answers for the first 100 numbers in the Fizz 
 displayed on its own line.
 
 """
+
+for r in range(0, 101):
+    if r % 3 == 0 and r % 5 == 0:
+        print(f'{r}, buzz fizz')
+
+    elif r % 5 == 0:
+        print(f'{r}, buzz')
+
+    elif r % 3 == 0:
+        print(f'{r}, fizz')
+    else:
+        continue
+
